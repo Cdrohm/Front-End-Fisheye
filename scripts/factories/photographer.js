@@ -22,3 +22,7 @@ function photographerFactory(data) {
     return { name, picture, getUserCardDOM }
 }
 
+
+constructor(photographer, MediaList, )
+    this.photographer = photographer;
+    this.mediaList = mediaList;
