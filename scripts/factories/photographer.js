@@ -1,3 +1,8 @@
+/**
+ * 
+ * @param {*} data 
+ * @returns 
+ */
 function photographerFactory(data) {
     const { name, portrait } = data;
 
@@ -15,3 +20,4 @@ function photographerFactory(data) {
     }
     return { name, picture, getUserCardDOM }
 }
+
