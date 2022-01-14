@@ -1,3 +1,4 @@
+//JAVASCRIPT PHOTOGRAPHER
 /**
  * 
  * @param {*} data 
