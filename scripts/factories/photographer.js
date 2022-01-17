@@ -23,6 +23,10 @@ function photographerFactory(data) {
 }
 
 
-constructor(photographer, MediaList, )
+/*constructor(photographer, MediaList, city, country, tagline, price)
     this.photographer = photographer;
     this.mediaList = mediaList;
+    this.city = city;
+    this.coutnry = country;
+    this.tagline = tagline;
+    this.price = price; */
