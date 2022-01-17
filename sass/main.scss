@@ -1,3 +1,4 @@
 @import "./Utils/variables"; 
-@import "./Base/general","./Utils/button", "./Utils/modal", "./Utils/form";
 @import "./Pages/photographers";
+@import "./Base/general";
+@import "./Component/button", "./Component/modal", "./Component/form";
