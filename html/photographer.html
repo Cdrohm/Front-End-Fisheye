@@ -1,60 +1,100 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <link href="../sass/main.css" rel="stylesheet" type="text/css" />
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/png" href="assets/favicon.png" />
+    <link
+      href="https://fonts.googleapis.com/css?family=DM+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="shortcut icon"
+      href="https://img.icons8.com/ios/50/000000/camera--v3.png"
+    />
+    <title>Fisheye - photographe</title>
+  </head>
 
-<head>
-  <link href="../sass/main.css" rel="stylesheet" type="text/css" />
-  <meta charset="utf-8">
-  <link rel="icon" type="image/png" href="assets/favicon.png">
-  <link href="https://fonts.googleapis.com/css?family=DM+Sans&display=swap" rel="stylesheet">
-  <link rel="shortcut icon" href="https://img.icons8.com/ios/50/000000/camera--v3.png" />
-  <title>Fisheye - photographe </title>
-</head>
+  <body>
+    <header>
+      <a href="../index.html">
+        <img
+          src="../assets/images/logo.png"
+          class="logo"
+          alt="Fisheye Home page"
+        />
+      </a>
+    </header>
+    <main id="main">
+      <!--Form contact-->
+      <div class="photograph-header">
+        <button class="contact_button" onclick="displayModal()">
+          Contactez-moi
+        </button>
+      </div>
+    </main>
+    <div id="contact_modal">
+      <div class="modal">
+        <header>
+          <h2>Contactez-moi</h2>
 
-<body>
-  <header>
-    <a href="../index.html">
-      <img src="../assets/images/logo.png" class="logo" alt="Fisheye Home page"/>
-    </a>
-  </header>
-  <main id="main">
-
-    <!--Form contact-->
-    <div class="photograph-header">
-      <button class="contact_button" onclick="displayModal()">Contactez-moi</button>
+          <!--Close modal-->
+          <img src="../assets/icons/close.svg" onclick="closeModal()" />
+        </header>
+        <form>
+          <div>
+            <label>Prénom</label>
+            <input
+              class="text-control"
+              type="text"
+              id="first"
+              name="first"
+              placeholder="John"
+              aria-label="First name"
+              required
+            />
+          </div>
+          <div>
+            <label>Nom</label>
+            <input
+              class="text-control"
+              type="text"
+              id="last"
+              name="last"
+              placeholder="Doe"
+              aria-label="Last name"
+              required
+            />
+          </div>
+          <div>
+            <label>Email</label>
+            <input
+              class="text-control"
+              type="email"
+              id="email"
+              name="email"
+              placeholder="John.Doe@email.com"
+              aria-label="Email"
+              required
+            />
+          </div>
+          <div>
+            <label>Votre message</label>
+            <input
+              class="text-control"
+              type="text"
+              id="text"
+              name="text"
+              aria-label="Your message"
+              required
+            />
+          </div>
+          <button class="contact_button" aria-label="Send">Envoyer</button>
+        </form>
+      </div>
     </div>
-  </main>
-  <div id="contact_modal">
-    <div class="modal">
-      <header>
-        <h2>Contactez-moi</h2>
 
-        <!--Close modal-->
-        <img src="../assets/icons/close.svg" onclick="closeModal()" />
-      </header>
-      <form>
-        <div>
-          <label>Prénom</label>
-          <input class="text-control" type="text" id="first" name="first" placeholder="John" aria-label="First name" required/>
-        </div>
-        <div>
-          <label>Nom</label>
-          <input class="text-control" type="text" id="last" name="last" placeholder="Doe" aria-label="Last name" required/>
-        </div>
-        <div>
-          <label>Email</label>
-          <input class="text-control" type="email" id="email" name="email" placeholder="John.Doe@email.com" aria-label="Email" required/>
-        </div>
-        <div>
-          <label>Votre message</label>
-          <input class="text-control" type="text" id="text" name="text" aria-label="Your message" required/>
-        </div>
-        <button class="contact_button">Envoyer</button>
-      </form>
-    </div>
-  </div>
-
-  <!--Way to JS-->
-  <script src="../scripts/utils/contactForm.js"></script>
-</body>
-
+    <!--Way to JS-->
+    <script src="../scripts/utils/contactForm.js"></script>
+  </body>
 </html>

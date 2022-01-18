@@ -3,6 +3,15 @@
   display: none;
 }
 
+.photograph-header {
+  background-color: #fafafa;
+  height: 300px;
+  margin: 0 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .photographer {
   &_section {
     display: grid;
