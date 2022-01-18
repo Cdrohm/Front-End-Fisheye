@@ -1,4 +1,17 @@
+//Utils
 @import "./Utils/variables";
-@import "./Base/general";
+
+//Base
+@import "./Base/typo";
+@import "./Base/base";
+
+//Pages
 @import "./Pages/photographers";
-@import "./Component/button", "./Component/modal", "./Component/form";
+
+//Components
+@import "./Component/button";
+@import "./Component/modal";
+
+//Layouts
+@import "./Layout/header";
+@import "./Layout/form";
