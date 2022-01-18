@@ -37,6 +37,7 @@
           Contactez-moi
         </button>
       </div>
+      <section id="photographer_section"></section>
     </main>
 
     <div id="contact_modal" class="contact_modal">
@@ -96,14 +97,17 @@
           </div>
           <div>
             <label for="message">Votre message</label>
-            <input
+            <textarea
               class="text-control"
               type="text"
               id="text"
               name="text"
               aria-label="Your message"
+              rows="10"
+              cols="50"
               required
-            />
+            >
+            </textarea>
           </div>
           <button class="contact_button" aria-label="Send">Envoyer</button>
         </form>
