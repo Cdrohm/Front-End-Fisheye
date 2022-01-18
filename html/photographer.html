@@ -39,7 +39,7 @@
       </div>
     </main>
 
-    <div id="contact_modal">
+    <div id="contact_modal" class="contact_modal">
       <div class="modal">
         <header>
           <h2>Contactez-moi</h2>
@@ -51,7 +51,13 @@
             onclick="closeModal()"
           />
         </header>
-        <form>
+        <form
+          name="reserve"
+          id="reserve"
+          class="reserve"
+          action="#"
+          method="get"
+        >
           <div>
             <label for="first">Prénom</label>
             <input

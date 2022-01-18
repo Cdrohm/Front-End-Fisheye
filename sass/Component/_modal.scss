@@ -1,4 +1,18 @@
 //MODAL
+#contact_modal {
+  display: none;
+}
+
+.contact_modal {
+  animation-name: modalopen;
+  animation-duration: var(--modal-duration);
+  _background: #232323;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  padding-top: 10px;
+}
+
 .modal {
   border-radius: 5px;
   background-color: #db8876;
