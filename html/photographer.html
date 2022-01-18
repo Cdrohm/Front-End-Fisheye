@@ -1,120 +1,77 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <link href="../sass/main.css" rel="stylesheet" type="text/css" />
-    <meta charset="utf-8" />
-    <link rel="icon" type="image/png" href="assets/favicon.png" />
-    <link
-      href="https://fonts.googleapis.com/css?family=DM+Sans&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="shortcut icon"
-      href="https://img.icons8.com/ios/50/000000/camera--v3.png"
-    />
-    <title>Fisheye - photographe</title>
-  </head>
 
-  <body>
-    <header>
-      <a href="../index.html">
-        <img
-          src="../assets/images/logo.png"
-          class="logo"
-          alt="Fisheye Home page"
-        />
-      </a>
-    </header>
+<head>
+  <link href="../sass/main.css" rel="stylesheet" type="text/css" />
+  <meta charset="utf-8" />
+  <link rel="icon" type="image/png" href="assets/favicon.png" />
+  <link href="https://fonts.googleapis.com/css?family=DM+Sans&display=swap" rel="stylesheet" />
+  <link rel="shortcut icon" href="https://img.icons8.com/ios/50/000000/camera--v3.png" />
+  <title>Fisheye - photographe</title>
+</head>
 
-    <main id="main">
-      <!--Form contact-->
-      <div class="photograph-header">
-        <button
-          class="contact_button"
-          aria-label="Contact me"
-          onclick="displayModal()"
-        >
-          Contactez-moi
-        </button>
-      </div>
-      <section id="photographer_section"></section>
-    </main>
+<body>
+  <header>
+    <a href="../index.html">
+      <img src="../assets/images/logo.png" class="logo" alt="Fisheye Home page" />
+    </a>
+  </header>
 
-    <div id="contact_modal" class="contact_modal">
-      <div class="modal">
-        <header>
-          <h2>Contactez-moi</h2>
+  <main id="main">
+    <div class="photograph-header">
 
-          <!--Close modal-->
-          <img
-            src="../assets/icons/close.svg"
-            aria-label="Close contact"
-            onclick="closeModal()"
-          />
-        </header>
-        <form
-          name="reserve"
-          id="reserve"
-          class="reserve"
-          action="#"
-          method="get"
-        >
-          <div>
-            <label for="first">Prénom</label>
-            <input
-              class="text-control"
-              type="text"
-              id="first"
-              name="first"
-              placeholder="John"
-              aria-label="First name"
-              required
-            />
-          </div>
-          <div>
-            <label for="last">Nom</label>
-            <input
-              class="text-control"
-              type="text"
-              id="last"
-              name="last"
-              placeholder="Doe"
-              aria-label="Last name"
-              required
-            />
-          </div>
-          <div>
-            <label for="email">Email</label>
-            <input
-              class="text-control"
-              type="email"
-              id="email"
-              name="email"
-              placeholder="John.Doe@email.com"
-              aria-label="Email"
-              required
-            />
-          </div>
-          <div>
-            <label for="message">Votre message</label>
-            <textarea
-              class="text-control"
-              type="text"
-              id="text"
-              name="text"
-              aria-label="Your message"
-              rows="10"
-              cols="50"
-              required
-            >
-            </textarea>
-          </div>
-          <button class="contact_button" aria-label="Send">Envoyer</button>
-        </form>
-      </div>
+      <!--button contact-->
+      <button class="contact_button" aria-label="Contact me" onclick="displayModal()">
+        Contactez-moi
+      </button>
     </div>
 
-    <!--Way to JS-->
-    <script src="../scripts/utils/contactForm.js"></script>
-  </body>
+    <section id="photographer_section"></section>
+  </main>
+
+  <!--menu déroulant-->
+  <div id="dropdown"></div>
+
+  <div id="contact_modal" class="contact_modal">
+    <div class="modal">
+      
+      <!--HEADER-->
+      <header>
+        <h2>Contactez-moi</h2>
+
+        <!--Close modal-->
+        <img src="../assets/icons/close.svg" aria-label="Close contact" onclick="closeModal()" />
+      </header>
+
+      <form name="reserve" id="reserve" class="reserve" action="#" method="get">
+        <div>
+          <label for="first">Prénom</label>
+          <input class="text-control" type="text" id="first" name="first" placeholder="John" aria-label="First name"
+            required />
+        </div>
+        <div>
+          <label for="last">Nom</label>
+          <input class="text-control" type="text" id="last" name="last" placeholder="Doe" aria-label="Last name"
+            required />
+        </div>
+        <div>
+          <label for="email">Email</label>
+          <input class="text-control" type="email" id="email" name="email" placeholder="John.Doe@email.com"
+            aria-label="Email" required />
+        </div>
+        <div>
+          <label for="message">Votre message</label>
+          <textarea class="text-control message" type="text" id="text" name="text" aria-label="Your message" rows="10"
+            cols="50" required>
+            </textarea>
+        </div>
+        <button class="contact_button" aria-label="Send">Envoyer</button>
+      </form>
+    </div>
+  </div>
+
+  <!--Way to JS-->
+  <script src="../scripts/utils/contactForm.js"></script>
+</body>
+
 </html>
