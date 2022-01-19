@@ -30,3 +30,5 @@ function photographerFactory(data) {
     this.coutnry = country;
     this.tagline = tagline;
     this.price = price; */
+
+    
