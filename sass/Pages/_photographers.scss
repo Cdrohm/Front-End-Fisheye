@@ -4,8 +4,20 @@
   height: 300px;
   margin: 0 100px;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+
+  &_card{
+    display: flex;
+    flex-direction: column;
+    margin-left: 40px;
+  }
+
+  &_img {
+    border-radius: 100%;
+    box-shadow: 0 8px 16px 0px;
+    margin-right: 40px;
+  }
 }
 
 .photographer {
