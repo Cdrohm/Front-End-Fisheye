@@ -3,3 +3,18 @@
     margin-left: 100px;
     font-weight: 600;
 }
+
+#sort-by {
+    background-color: $primary-color;
+    color: #fff;
+    border: none;
+    height: 60px;
+    width: 170px;
+    border-radius: 5px;
+    margin: 9px 0 48px 25px;
+    font-size: 18px;
+
+    > * {
+      font-size: 18px;
+    }
+}
