@@ -129,7 +129,7 @@ h3 {
   cursor: pointer;
 }
 
-.contact_button:hover {
+.contact_button:hover, .contact_button:focus {
   color: black;
   background-color: #d3573c;
 }
@@ -210,8 +210,9 @@ h3 {
   height: 60px;
   width: 170px;
   border-radius: 5px;
-  margin: 0;
+  margin-left: 20px;
   font-size: 18px;
+  padding: 20px;
 }
 
 form {
