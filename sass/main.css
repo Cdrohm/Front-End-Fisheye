@@ -71,14 +71,14 @@ h1 {
   margin-right: 40px;
 }
 
-.photograph-header h2 {
+.photograph-header #name {
   color: #d3573c;
   font-size: 50px;
   font-weight: 400;
   margin: 0 0 10px 0;
 }
 
-.photograph-header h3 {
+.photograph-header #location {
   color: #901c1c;
   margin: 0;
 }
