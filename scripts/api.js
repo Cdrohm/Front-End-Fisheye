@@ -6,5 +6,16 @@ async function getPhotographers () {
     then((data) => {
         return data.photographers;
     });
+
     return photographers;
+}
+
+async function getMedias() {
+    let medias = await fetch("../photographers.json")
+    then((Response) => Response.json())
+    then((data) => {
+        return data.media;
+    });
+
+    return medias;
 }
