@@ -64,7 +64,7 @@ h1 {
   margin-left: 40px;
 }
 
-.photograph-header_img {
+.photograph-header #portrait {
   border-radius: 100%;
   -webkit-box-shadow: 0 8px 16px 0px;
           box-shadow: 0 8px 16px 0px;
@@ -78,7 +78,7 @@ h1 {
   margin: 0 0 10px 0;
 }
 
-.photograph-header #location {
+.photograph-header #city {
   color: #901c1c;
   margin: 0;
 }
