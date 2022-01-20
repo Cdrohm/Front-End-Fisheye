@@ -1,4 +1,8 @@
 //PAGE PHOTOGRAPHER
+//IMPORT
+import {getPhotographers} from "./api.js";
+import {getMedias} from "./api.js";
+
 //Dropdown Filter
 function sortBy(photographerMedias) {
     const option = document.querySelector(#sort-by).value;
