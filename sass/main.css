@@ -33,15 +33,6 @@ h1 {
   margin-right: 180px;
 }
 
-h2 {
-  color: #d3573c;
-}
-
-h3 {
-  color: #901c1c;
-  margin: 0;
-}
-
 .logo {
   height: 50px;
   margin-left: 100px;
@@ -78,6 +69,18 @@ h3 {
   -webkit-box-shadow: 0 8px 16px 0px;
           box-shadow: 0 8px 16px 0px;
   margin-right: 40px;
+}
+
+.photograph-header h2 {
+  color: #d3573c;
+  font-size: 50px;
+  font-weight: 400;
+  margin: 0 0 10px 0;
+}
+
+.photograph-header h3 {
+  color: #901c1c;
+  margin: 0;
 }
 
 .photographer_section {
