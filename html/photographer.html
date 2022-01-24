@@ -1,142 +1,93 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <link href="../sass/main.css" rel="stylesheet" type="text/css" />
-    <meta charset="utf-8" />
-    <link rel="icon" type="image/png" href="assets/favicon.png" />
-    <link
-      href="https://fonts.googleapis.com/css?family=DM+Sans&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="shortcut icon"
-      href="https://img.icons8.com/ios/50/000000/camera--v3.png"
-    />
-    <title>Fisheye - photographe</title>
-  </head>
 
-  <body>
-    <!--logo-->
-    <header>
-      <a href="../index.html">
-        <img
-          src="../assets/images/logo.png"
-          class="logo"
-          alt="Fisheye Home page"
-        />
-      </a>
-    </header>
+<head>
+  <link href="../sass/main.css" rel="stylesheet" type="text/css" />
+  <meta charset="utf-8" />
+  <link rel="icon" type="image/png" href="assets/favicon.png" />
+  <link href="https://fonts.googleapis.com/css?family=DM+Sans&display=swap" rel="stylesheet" />
+  <link rel="shortcut icon" href="https://img.icons8.com/ios/50/000000/camera--v3.png" />
+  <title>Fisheye - photographe</title>
+</head>
 
-    <main id="main">
-      <div class="photograph-header">
-        <div class="photograph-header_card">
-          <h2 id="name">Nom Photographe</h2>
-          <h3 id="city">Ville, PAYS</h3></br>
-          <span id="tag">citation artiste</span>
-        </div>
-        <!--button contact-->
-        <button
-          class="contact_button"
-          aria-label="Contact me"
-          onclick="displayModal()"
-        >
-          Contactez-moi
-        </button>
-        <div id="portrait">
-          <img src="" alt="Mimi Keel"/>
-        </div>
+<body>
+  <!--logo-->
+  <header>
+    <a href="../index.html">
+      <img src="../assets/images/logo.png" class="logo" alt="Fisheye Home page" />
+    </a>
+  </header>
+
+  <main id="main">
+    <div class="photograph-header">
+      <div class="photograph-header_card">
+        <h2 id="name">Nom Photographe</h2>
+        <h3 id="city">Ville, PAYS</h3></br>
+        <span id="tag">citation artiste</span>
       </div>
 
-      <section id="photographer_section"></section>
-    </main>
+      <!--button contact-->
+      <button class="contact_button" aria-label="Contact me" onclick="displayModal()">
+        Contactez-moi
+      </button>
 
-    <!--menu déroulant-->
-    <div id="dropdown" aria-label="Sort by">
-      <label for="sort-by" id="sort-list">Trier par</label>
-      <select name="sort" id="sort-by" aria-label="Order by">
-        <option value="popularity">Popularité</option>
-        <option value="date">Date</option>
-        <option value="title">Titre</option>
-      </select>
+      <div id="portrait">
+        <img src="" alt="Mimi Keel" />
+      </div>
     </div>
 
-    <div id="contact_modal" class="contact_modal">
-      <div class="modal">
-        <!--HEADER-->
-        <header>
-          <h2>Contactez-moi</h2>
+    <section id="photographer_section"></section>
+  </main>
 
-          <!--Close modal-->
-          <img
-            src="../assets/icons/close.svg"
-            aria-label="Close contact"
-            onclick="closeModal()"
-          />
-        </header>
+  <!--menu déroulant-->
+  <div id="dropdown" aria-label="Sort by">
+    <label for="sort-by" id="sort-list">Trier par</label>
+    <select name="sort" id="sort-by" aria-label="Order by">
+      <option value="popularity">Popularité</option>
+      <option value="date">Date</option>
+      <option value="title">Titre</option>
+    </select>
+  </div>
 
-        <form
-          name="reserve"
-          id="reserve"
-          class="reserve"
-          action="#"
-          method="get"
-        >
-          <div>
-            <label for="first">Prénom</label>
-            <input
-              class="text-control"
-              type="text"
-              id="first"
-              name="first"
-              placeholder="John"
-              aria-label="First name"
-              required
-            />
-          </div>
-          <div>
-            <label for="last">Nom</label>
-            <input
-              class="text-control"
-              type="text"
-              id="last"
-              name="last"
-              placeholder="Doe"
-              aria-label="Last name"
-              required
-            />
-          </div>
-          <div>
-            <label for="email">Email</label>
-            <input
-              class="text-control"
-              type="email"
-              id="email"
-              name="email"
-              placeholder="John.Doe@email.com"
-              aria-label="Email"
-              required
-            />
-          </div>
-          <div>
-            <label for="message">Votre message</label>
-            <textarea
-              class="text-control message"
-              type="text"
-              id="text"
-              name="text"
-              aria-label="Your message"
-              rows="10"
-              cols="50"
-              required
-            >
+  <div id="contact_modal" class="contact_modal">
+    <div class="modal">
+      <!--HEADER-->
+      <header>
+        <h2>Contactez-moi</h2>
+
+        <!--Close modal-->
+        <img src="../assets/icons/close.svg" aria-label="Close contact" onclick="closeModal()" />
+      </header>
+
+      <form name="reserve" id="reserve" class="reserve" action="#" method="get">
+        <div>
+          <label for="first">Prénom</label>
+          <input class="text-control" type="text" id="first" name="first" placeholder="John" aria-label="First name"
+            required />
+        </div>
+        <div>
+          <label for="last">Nom</label>
+          <input class="text-control" type="text" id="last" name="last" placeholder="Doe" aria-label="Last name"
+            required />
+        </div>
+        <div>
+          <label for="email">Email</label>
+          <input class="text-control" type="email" id="email" name="email" placeholder="John.Doe@email.com"
+            aria-label="Email" required />
+        </div>
+        <div>
+          <label for="message">Votre message</label>
+          <textarea class="text-control message" type="text" id="text" name="text" aria-label="Your message" rows="10"
+            cols="106" required>
             </textarea>
-          </div>
-          <button class="contact_button" aria-label="Send">Envoyer</button>
-        </form>
-      </div>
+        </div>
+        <button class="contact_button" aria-label="Send">Envoyer</button>
+      </form>
     </div>
+  </div>
 
-    <!--Way to JS-->
-    <script type="" src="../scripts/pages/photographer.js"></script>
-  </body>
+  <!--Way to JS-->
+  <script src="/scripts/utils/contactForm.js"></script>
+</body>
+
 </html>
