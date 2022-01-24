@@ -3,6 +3,18 @@
 import {getPhotographers} from "./api.js";
 import {getMedias} from "./api.js";
 
+async function init() {
+    let photographers = await getPhotographers();
+    const photographerId = parseInt(document.getElementById("photographer-id").value);
+    const photographerItem = photographers.filter((item) => item.id === photographerId);
+    const content = document.getElementById("artist");
+    photographerItem.forEach((photographer) => content.appendChild(photographerHeader(photographer)));
+  
+    let medias = await getMedias();
+    const photographer = photographers.find((photographer) => photographer.id === photographerId);
+    let photographerMedias = medias.filter((item) => item.photographerId === photographerId);
+    photographerMedias.forEach((media) => appendMediaToGallery(photographer, media));
+ 
 //Dropdown Filter
 function sortBy(photographerMedias) {
     const option = document.querySelector(#sort-by).value;
