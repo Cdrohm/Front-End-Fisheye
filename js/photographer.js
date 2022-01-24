@@ -14,7 +14,7 @@ async function init() {
     const photographer = photographers.find((photographer) => photographer.id === photographerId);
     let photographerMedias = medias.filter((item) => item.photographerId === photographerId);
     photographerMedias.forEach((media) => appendMediaToGallery(photographer, media));
- 
+} 
 //Dropdown Filter
 function sortBy(photographerMedias) {
     const option = document.querySelector(#sort-by).value;
@@ -43,4 +43,43 @@ function sortBy(photographerMedias) {
     }
 
     return photographerMedias;
-}
+    }
+
+//HEADER photograph
+function photographerHeader(photographer) {
+    const photographerProfile = document.createElement("article");
+    const contactButton = document.getElementById("contact");
+    const profilePicture = document.createElement("img");
+    const photographerName = document.createElement("h2");
+    const localisation = document.createElement("p");
+    localisation.id = "localisation";
+    const tagline = document.createElement("p");
+    tagline.id = "tagline";
+    const tagsList = document.createElement("ul");
+    tagsList.id = "tags-list";
+    tagsList.setAttribute("aria-label", "Tags");
+  
+    profilePicture.src = "../photographersID/" + photographer.portrait;
+    profilePicture.alt = photographer.name;
+    photographerName.textContent = photographer.name;
+    localisation.textContent = photographer.city + ", " + photographer.country;
+    tagline.textContent = photographer.tagline;
+    contactButton.textContent = "Contactez-moi";
+  
+    const tagList = photographer.tags;
+    for (var j = 0; j < tagList.length; j++) {
+      const listTags = document.createElement("li");
+      listTags.id = "list-tags";
+      listTags.textContent = "#" + tagList[j];
+      tagsList.appendChild(listTags);
+    }
+  
+    photographerProfile.appendChild(contactButton);
+    photographerProfile.appendChild(profilePicture);
+    photographerProfile.appendChild(photographerName);
+    photographerProfile.appendChild(localisation);
+    photographerProfile.appendChild(tagline);
+    photographerProfile.appendChild(tagsList);
+  
+    return photographerProfile;
+  }
